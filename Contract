@@ -1,4 +1,8 @@
-/* Swift syntaxt-inspired pseudo code for an Ethereum-based smart contract. This will obviously be changed into Solidity and ironed out from its pseudo code state. For this example, a painter will be paid once a paint job is done correctly, but only if it is complete in <48 hours. Photo recognition software will verify the color is accurate, and a GPS API call will verify the painter's location. */
+/* Swift syntaxt-inspired pseudo code for an Ethereum-based smart contract. 
+   This will obviously be changed into Solidity and ironed out from its pseudo code state. 
+   For this example, a painter will be paid once a paint job is done correctly, 
+   but only if it is complete in <48 hours. Photo recognition software will verify the color 
+   is accurate, and a GPS API call will verify the painter's location. */
 
 Contract {
     let Painter = aaaaaa
