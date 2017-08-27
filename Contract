@@ -1,0 +1,61 @@
+/* Swift syntaxt-inspired pseudo code for an Ethereum-based smart contract. This will obviously be changed into Solidity and ironed out from its pseudo code state. For this example, a painter will be paid once a paint job is done correctly, but only if it is complete in <48 hours. Photo recognition software will verify the color is accurate, and a GPS API call will verify the painter's location. */
+
+Contract {
+    let Painter = aaaaaa
+    let Employer = bbbbbb
+    
+    func IsCorrectWorkplace() -> bool {
+        var CorrectWorkplace: Int = // GPS coordinates of room that needs painting
+        var PainterWorkplace: Int = // Get request for Painter's current latitude/longitude
+        
+        if CorrectWorkplace == PainterWorkplace {
+            return true
+        } else {
+            return false
+        }
+    }
+    
+    // func to log Start Time
+    
+    func IsCorrectColor() -> bool {
+        var Wall = UIColor()
+        var OriginalWallColor = UIColor.white
+        var FinishedWallColor = UIClor.blue
+        
+        // API call that allows Painter to upload photo of wall and the program detects if it’s the right color
+        
+        if Wall = FinishedWallColor {
+            return true
+        }
+        if Wall = OriginalWallColor {
+            return false
+        } else {
+            return false
+        }
+    }
+    
+    // func to log Finish Time, will be in hours passed since Start Time, not AM/PM time.
+    
+    func DeterminePayment() -> Int {
+        var Timeframe: Int = // Get Finish Time
+        var Payment: Int = 0
+        
+        if Timeframe == <24 { // could also do case
+            Payment = 1000 }
+        if Timeframe == >=24 && <48 {
+            Payment = 500 }
+        if Timeframe == >=48 {
+            Payment = 0 }
+        
+        Return Payment
+    }
+    
+    func ExecuatePayment() {
+        if IsCorrectWorkplace && IsCorrectColor == true {
+            ExecuatePayment // from Employer’s account into Painter’s account
+        } else {
+            // Send Employer error message
+        }
+    }
+    
+}
