@@ -24,9 +24,9 @@ Contract {
     func IsCorrectColor() -> bool {
         var Wall = UIColor()
         var OriginalWallColor = UIColor.white
-        var FinishedWallColor = UIClor.blue
+        var FinishedWallColor = UIColor.blue
         
-        // API call that allows Painter to upload photo of wall and the program detects if it’s the right color
+        // API call that allows Painter to upload photo of wall and the program detects if it is the right color.
         
         if Wall = FinishedWallColor {
             return true
@@ -38,13 +38,13 @@ Contract {
         }
     }
     
-    // func to log Finish Time, will be in hours passed since Start Time, not AM/PM time.
+    // func to log Finish Time, which will be in hours passed since Start Time, not AM/PM time.
     
-    func DeterminePayment() -> Int {
+    func CorrectPayment() -> Int {
         var Timeframe: Int = // Get Finish Time
         var Payment: Int = 0
         
-        if Timeframe == <24 { // could also do case
+        if Timeframe == <24 { // could do case instead of if/else statements
             Payment = 1000 }
         if Timeframe == >=24 && <48 {
             Payment = 500 }
@@ -56,7 +56,7 @@ Contract {
     
     func ExecuatePayment() {
         if IsCorrectWorkplace && IsCorrectColor == true {
-            ExecuatePayment // from Employer’s account into Painter’s account
+            CorrectPayment // from Employer’s account into Painter’s account
         } else {
             // Send Employer error message
         }
