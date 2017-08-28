@@ -1,0 +1,68 @@
+pragma solidity ^0.4.0;
+
+contract PaintJob {
+
+    address Painter;
+    address Employer;
+
+    function DetermineCorrectLocation() {
+        int WorkplaceLocation = 20; // placeholder number
+        int PainterLocation = 20; // placeholder number
+        bool IsCorrectLocation;
+                
+        if (WorkplaceLocation == PainterLocation) {
+           IsCorrectLocation = true;
+            } else {
+            IsCorrectLocation = false;
+            }
+    }
+    
+    function DetermineCorrectColor() {
+        int IntendedColor = 1212; // placeholder hexcode
+        int FinalColor = 1212; // placeholder hexcode
+        bool IsCorrectColor;
+        
+    // API call to determine if photo of final color is correct
+       
+        if (FinalColor == IntendedColor) {
+            IsCorrectColor = true;
+            } else {
+            IsCorrectColor = false;  
+            }
+    }
+    
+    function TimeElapsed() {
+        int Duration = 0 hours;
+        bool WithinAllottedTime;
+        
+    // API call to determine time elapsed
+    
+        if (Duration == 24 hours) {
+            WithinAllottedTime = true;
+        } else {
+            WithinAllottedTime = false;
+        }
+    }
+    
+    function ExecuatePayment() {
+        bool CorrectWorkplace;
+        bool CorrectColor;
+        bool CorrectTime;
+        bool ShouldPay;
+        int Pay = 0;
+        
+        if (CorrectWorkplace == true && CorrectColor == true && CorrectTime == true) {
+            ShouldPay = true;
+        }
+        
+        if (ShouldPay == true) {
+            Pay == 500;
+        }
+        if (ShouldPay == false) {
+            Pay == 0;
+        }
+    }
+    
+    // function for Employer to pay Painter or not
+        
+}
